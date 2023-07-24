@@ -1,0 +1,6 @@
+$_SESSION Variables
+
+$_SESSION['userId'] 
+$_SESSION['emailId'] 
+$_SESSION['fname'] 
+$_SESSION['lname'] 

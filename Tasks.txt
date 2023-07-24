@@ -1,0 +1,113 @@
+- Work out how to get all scripts referencing one fonts folder in the deltamaths folder
+
+USERS:
+- make the default language english
+
+ADMIN:
+- statistics for whatever reason
+- send bulk emails to tutors/students/everyone
+
+STUDENTS:
+- notifications for requests. Compare last logged on and request sent dates for notifications. 
+  Or have a viewed parameter in database that is changed when page is loaded?
+
+TUTORS:
+- include preview of tutor advertising on the becomeatutor page
+- notifications for requests. Compare last logged on and request sent dates for notifications. 
+  Or have a viewed parameter in database that is changed when page is loaded?
+- list of 25 tutors per page. Find out how to actually do this
+- make sure that pictures have a unique filename to prevent overwrites etc
+- time period to complete tests on Become a tutor page
+
+QUIZ:
+
+SKILLS:
+- popup for latex documentation
+- popup for NCEA lvl2 formulae
+
+EXAMS:
+- allow a timer for exams
+- once a certain question has been created follow the chain of related questions to complete the exam. How do I do this?
+
+DATABASE:
+
+LANGUAGE:
+- define text for english and maori
+- for users, create a field that allows them to choose their preferred language, perhaps they 
+  can have the option of choosing to exclude the test words in maori but everything else in 
+  maori
+- no need to make a separate field for maori questions in the savedtests table, include little 
+  thing saying saved tests will not have text updated only future tests will have preferred 
+  language
+
+MARKING:
+- how can I mark a question that has a mixture of expressions and equations. e.g. 'y=x^2,ax^2,9c^2'
+
+PAYMENT:
+- paypal or credit card? How do I do this?
+
+SETTINGS:
+- Look at: https://web.dev/building-a-settings-component/
+- Scroller for the number of questions for exams or tests
+
+JAVASCRIPT:
+- https://stackoverflow.com/questions/3241422/include-php-inside-javascript-js-files
+
+
+1. Make everything look better now please
+2. Destroy the website by making it break down
+3. Encapsulate code into functions for every page
+
+
+
+. Advertising for Tutors
+. payment
+. finish whole design
+
+function drawGraphFunction($imageDimensions, $function, $spacingProportion, $translateX=0, $translateY=0, $includeGrid=True){
+        $pointsString='';
+        $xValues = [];
+        $yValues = [];
+        $spacing = round($spacingProportion * $imageDimensions["width"]);
+        for($i=-$imageDimensions["width"]; $i<=2*$imageDimensions["width"];$i+=$spacing){
+            $yValue = $this->graphFunction($function, $i) - $translateY;
+            if(abs($yValue) > 1.2 * $imageDimensions["height"]) continue;
+            array_push($xValues, $i + $translateX);
+            array_push($yValues,$yValue);
+        }
+        $yValues = array_reverse($yValues);
+        for($i=0; $i < count($xValues);$i++){
+            $pointsString .= $xValues[$i].','.$yValues[$i].' ';
+        }
+        $pointsString .= $xValues[count($xValues)-1].','.$yValues[count($yValues)-1];
+        echo $pointsString;
+        $SVGcode = '<polyline points="'.$pointsString.'" fill="none" stroke="black" />';
+        if($includeGrid){
+            return $this->generateCartesianGrid($imageDimensions).$SVGcode;
+        }
+        return $SVGcode;
+    }
+
+
+
+    function drawGraphFunction($imageDimensions, $function, $spacingProportion, $translateX=0, $translateY=0, $includeGrid=True){
+        $pointsString='';
+        $xValues = [];
+        $yValues = [];
+        $spacing = round($spacingProportion * $imageDimensions["width"]);
+        for($i=-$imageDimensions["width"]; $i<=2*$imageDimensions["width"];$i+=$spacing){
+            array_push($xValues, $i + $translateX);
+            array_push($yValues, $this->graphFunction($function, $i) - $translateY);
+        }
+        $yValues = array_reverse($yValues);
+        for($i=0; $i < count($xValues);$i++){
+            $pointsString .= $xValues[$i].','.$yValues[$i].' ';
+        }
+        $pointsString .= $xValues[count($xValues)-1].','.$yValues[count($yValues)-1];
+        echo $pointsString;
+        $SVGcode = '<polyline points="'.$pointsString.'" fill="none" stroke="black" />';
+        if($includeGrid){
+            return $this->generateCartesianGrid($imageDimensions).$SVGcode;
+        }
+        return $SVGcode;
+    }

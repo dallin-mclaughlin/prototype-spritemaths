@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    
+}
+body{
+    position: relative;
+    top: 120px;
+    background-color: rgb(91, 89, 89);
+}
+
+.back{
+    background-color: rgb(36, 2, 2);
+    height: 120vh;
+    background-size: cover;
+    color:black;
+    right:0;
+}
+
+#switcher{
+    margin-left:50%;
+    transform: translateX(-300%);
+}
+
+#return{
+    background-image: url("images/graphicSVG/return.svg");
+    background-size:cover;
+    width:60px;
+    height:60px;
+    border-radius: 60px;
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+}
+
+
+.tests-window{
+    display: table;
+    width: 900px;
+    min-height: 90vh;
+    overflow-y:hidden;
+    margin: auto;
+    margin-top:2vh;
+}
+
+
+.tests-window button{
+    height: 8vh;
+    width:100%;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.1s;
+    cursor: default;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+.tests-window a{
+    height: 8vh;
+    width:100%;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(150, 108, 108);
+}
+
+.tests-window button[name=blanksavedtest]{
+    height: 8vh;
+    width:100%;
+    border: none;
+    color: transparent;
+    border-radius: 25px;
+    background-image: url("images/graphicSVG/blanktest.svg");
+    background-size: cover;
+    transition-duration: 0.1s;
+    cursor: default;
+    font-family: 'Rubik', sans-serif;
+}
+
+#to_basic, #basic_header{
+    background-image: url("images/graphicSVG/basic.svg");
+    background-size: cover;
+    color:white;
+}
+
+#to_year9, #yr9_header{
+    background-image: url("images/graphicSVG/year9.svg");
+    background-size: cover;
+    color:white;
+}
+
+#to_year10, #yr10_header{
+    background-image: url("images/graphicSVG/year10.svg");
+    background-size: cover;
+    color:white;
+}
+
+#to_year11, #year11_header{
+    background-image: url("images/graphicSVG/year11.svg");
+    background-size: cover;
+    color:white;
+}
+
+#to_year12, #year12_header{
+    background-image: url("images/graphicSVG/year12.svg");
+    background-size: cover;
+    color:white;
+}
+
+#to_year13, #year13_header{
+    background-image: url("images/graphicSVG/year13.svg");
+    background-size: cover;
+    color:white;
+}
+
+#to_scholarship, #SCHOL{
+    background-image: url("images/graphicSVG/scholarship.svg");
+    background-size: cover;
+    color:white;
+}
+
+#to_NCEALVL1_geometricreasoning:hover{
+    background-color: rgb(147, 113, 94);
+    background-size: cover;
+    color:white;
+}
+
+#to_NCEALVL1_numeracy:hover{
+    background-color: rgb(147, 113, 94);
+    background-size: cover;
+    color:white;
+}
+
+.NCEALVL1_Algebra:hover{
+    background-image: url("images/graphicSVG/year11.svg");
+    background-size: cover;
+    color:white;
+}
+
+
+
+.tests-window button:disabled:hover{
+    background-color: rgb(190, 75, 75);
+    color: rgb(90, 90, 90);
+    box-shadow: 0 0px 0px 0 white;
+    cursor: default;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.tests-window button[name=blanksavedtest]:disabled:hover{
+    background-color: rgb(230, 230, 230); 
+    color: transparent;
+    box-shadow: 0 0px 0px 0 white;
+    cursor: default;
+    font-family: 'Rubik', sans-serif;
+}
+
+.tests-window button:hover{
+    background-color: rgb(234, 127, 154);
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24);
+    color: white;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+#return{
+    box-shadow: 0 0px 0px 0 white;
+}
+
+.home_panel{
+    display:table-cell;
+    width: 50%;
+    overflow: auto;
+    scrollbar-gutter: stable;
+}
+
+.test_buttons{
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 100px;
+    grid-gap: 0.5em;
+    grid-auto-flow: row;
+    margin-left: 18px;
+    margin-top:18px;
+    margin-bottom:18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.skill_buttons{
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 100px;
+    grid-gap: 0.5em;
+    grid-auto-flow: row;
+    margin: 20px;
+    transform: translateY(0px);
+    font-family: 'Rubik', sans-serif;
+}
+
+.new {
+    /*background-color:rgb(119, 119, 119);*/
+    border-radius:30px;
+    display:table-cell;
+    width: 50%;
+    height:auto;
+    overflow: auto;
+    scrollbar-gutter: stable;
+    transform: translateX(-3vw);
+    text-align:center;
+}
+
+.saved-tests {
+    display:table-cell;
+    width: 50%;
+    overflow: auto;
+    scrollbar-gutter: stable;
+    transform: translateX(3vw);
+}
+
+
+.new::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+.new::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+ 
+.new::-webkit-scrollbar-thumb {
+    background-color: #138b67;
+    border-radius: 100px;
+}
+

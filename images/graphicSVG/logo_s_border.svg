@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="208mm"
+   height="234mm"
+   viewBox="0 0 208 234"
+   version="1.1"
+   id="svg1286"
+   sodipodi:docname="logo_s_border.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <defs
+     id="defs1280">
+    <rect
+       x="69.490077"
+       y="102.36423"
+       width="76.97362"
+       height="125.88395"
+       id="rect2190" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1353"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,10,0,1 @ F,0,0,1,0,15,0,1 @ F,0,0,1,0,15,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,15,0,1 @ F,0,0,1,0,15,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="15"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <rect
+       x="71.515999"
+       y="118.60229"
+       width="120.96645"
+       height="110.91875"
+       id="rect839" />
+    <rect
+       x="71.515999"
+       y="118.60229"
+       width="120.96645"
+       height="110.91875"
+       id="rect645" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect835"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,10,0,1 @ F,0,0,1,0,15,0,1 @ F,0,0,1,0,15,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,15,0,1 @ F,0,0,1,0,15,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="15"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <rect
+       x="71.515999"
+       y="118.60229"
+       width="61.772392"
+       height="99.592811"
+       id="rect839-4" />
+    <rect
+       x="71.515999"
+       y="118.60229"
+       width="120.96645"
+       height="110.91875"
+       id="rect1323" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="447.75995"
+     inkscape:cy="579.34467"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1918"
+     inkscape:window-height="2037"
+     inkscape:window-x="1898"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1283">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4.60719"
+       id="path833-9"
+       sodipodi:sides="6"
+       sodipodi:cx="104.23511"
+       sodipodi:cy="116.79679"
+       sodipodi:r1="117.01385"
+       sodipodi:r2="101.33697"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.0943951"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       inkscape:path-effect="#path-effect1353"
+       d="m 95.574856,228.81064 -79.68633,-46.00692 a 25.980762,25.980762 59.999998 0 1 -12.9903818,-22.5 l -2.3e-6,-87.01385 a 25.980762,25.980762 120 0 1 12.9903801,-22.5 L 95.57485,4.782944 a 17.320508,17.320508 180 0 1 17.32051,-5e-7 l 79.68633,46.0069215 a 25.980762,25.980762 59.999998 0 1 12.99038,22.5 l 0,87.013845 a 25.980762,25.980762 120 0 1 -12.99038,22.5 l -79.68633,46.00693 a 17.320508,17.320508 180 0 1 -17.320504,0 z" />
+    <text
+       xml:space="preserve"
+       id="text2188"
+       style="font-style:normal;font-weight:normal;font-size:110.304px;line-height:1.25;font-family:sans-serif;white-space:pre;fill:#ffffff;fill-opacity:1;stroke:#ffffff"
+       x="105.54076"
+       y="161.19914"><tspan
+         id="tspan2192"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:110.304px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:center;text-anchor:middle;fill:#ffffff;stroke:#ffffff">S</tspan></text>
+  </g>
+</svg>

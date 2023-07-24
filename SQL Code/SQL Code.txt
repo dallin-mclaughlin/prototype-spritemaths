@@ -1,0 +1,62 @@
+SQL Code
+
+CREATE TABLE savedtests(
+	idTests varchar(255) NOT NULL PRIMARY KEY,
+    idUsers int(11) NOT NULL,
+    questionBlurbs TEXT, 
+    questions TEXT NOT NULL,
+    imageReferences TEXT NOT NULL,
+    answers TEXT NOT NULL,
+    submittedAnswers TEXT NOT NULL,
+    submittedWorkings TEXT NOT NULL,
+    types varchar(255) NOT NULL,
+    saveddates varchar(255) NOT NULL,
+	FOREIGN KEY (idUsers) REFERENCES users(idUsers)
+);
+
+CREATE TABLE tutorstudentrelations (
+    idTutor     INT      NOT NULL,
+    idStudent     INT      NOT NULL,
+    CreatedDateTime DATETIME NOT NULL,
+    --
+    CONSTRAINT tutorstudentrelations_PK PRIMARY KEY (idTutor, idStudent),
+    CONSTRAINT tutorstudentrelations_FK FOREIGN KEY (idTutor)
+        REFERENCES users (idUsers),
+    CONSTRAINT tutorstudentrelations_FK FOREIGN KEY (idStudent)
+        REFERENCES users (idUsers)
+);
+
+CREATE TABLE classes (
+    id INT NOT NULL AUTO_INCREMENT,
+    idTutor     INT      NOT NULL,
+    className     VARCHAR(30)      NOT NULL,
+    --
+    CONSTRAINT classes_PK PRIMARY KEY (id),
+    CONSTRAINT classes_FK FOREIGN KEY (idTutor) REFERENCES users (idUsers)
+);
+
+CREATE TABLE adminaccounts(
+    idAdmin INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    emailAdmin VARCHAR(255) NOT NULL,
+    userAdmin VARCHAR(255) NOT NULL,
+    passwordAdmin VARCHAR(255) NOT NULL
+)
+
+CREATE TABLE users(
+    idUsers INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(255) NOT NULL,
+    lastName VARCHAR(255) NOT NULL,
+    emailUsers VARCHAR(255) NOT NULL,
+    pwdUsers VARCHAR(255) NOT NULL,
+    bronzePoints INT(11) NOT NULL,
+    silverPoints INT(11) NOT NULL,
+    goldPoints INT(11) NOT NULL,
+    vkey VARCHAR(255) NOT NULL,
+    verified TINYINT(1) NOT NULL,
+    createDate INT(11) NOT NULL,
+    lostPasswordKey VARCHAR(45) NOT NULL,
+    resetPasswordTime INT(11) NOT NULL,
+    verifiedP TINYINT(1) DEFAULT 1 NOT NULL
+)
+
+//DELETE CASCADES would be good: https://stackoverflow.com/questions/1571581/how-to-add-on-delete-cascade-in-alter-table-statement
