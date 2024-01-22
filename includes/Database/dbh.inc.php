@@ -1,10 +1,10 @@
 <!-- The php code that sets up a connection with the mysql database system -->
 <?php
 
-$servername = "localhost";
-$dBUsername = "root";
+$servername = "";
+$dBUsername = "";
 $dBPassword = "";
-$dBName = "deltamaths";
+$dBName = "";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
@@ -15,7 +15,7 @@ if (!$conn) {
 ?>
 
 
-$servername = "localhost";
-$dBUsername = "u465701908_spritemaths";
-$dBPassword = "mathisCool153";
-$dBName = "u465701908_spritemaths";  u465701908_spritemaths
+$servername = "";
+$dBUsername = "";
+$dBPassword = "";
+$dBName = "";  
